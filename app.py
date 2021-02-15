@@ -45,10 +45,10 @@ def process_file():
     av_height = sum(height_v) / lines_amount
     av_weight = sum(weight_values) / lines_amount
     
-    return f'Parsed file: "hw05.cvs" 
+    return f'Parsed file: "hw05.csv" 
     \nTotal values in file: {lines_amount} 
-    \nAverage height: {round(avrg_height * 2.54)} cm 
-    \nAverage weight: {round(avrg_weight * 2.2)} kg'
+    \nAverage height: {round(av_height * 2.54)} cm 
+    \nAverage weight: {round(av_weight * 2.2)} kg'
 
 # astronauts
 @app.route('/space/')
